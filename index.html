@@ -3,9 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
+    <title>Weiyi Yang - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            text-align: center;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar img {
+            border-radius: 50%;
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .content {
+            flex: 2;
+            padding: 20px;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            width: 600px; /* Adjust to fit desired width */
+            height: 300px; /* Adjust to fit desired height */
+            margin: 20px auto;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensure the content scales within the box */
+        }
+        .active {
+            display: block;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .caption-container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            color: white;
+        }
+        .dots-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active-dot, .dot:hover {
+            background-color: #717171;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, GitHub Pages!.......</h1>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+        <a href="#activities">Activities</a>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <img src="weiyi_yang.jpg" alt="Weiyi Yang">
+            <h2>Weiyi Yang</h2>
+            <p>Huazhong University of Science and Technology</p>
+            <div class="contact-info">
+                <p>📍 Luoyu Road 1037, Wuhan, China</p>
+                <p>✉️ <a href="mailto:Yang-weiyi@outlook.com"><em>Yang-weiyi@outlook.com</em></a></p>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Welcome!</h2>
+            <p>About Me: I'm a Master of Science in Biophysics student at Huazhong University of Science and Technology (HUST). My expertise lies in applied biophysics, specifically in the study of photoreceptor mechanisms in <span class="italic">Caenorhabditis elegans</span>. I specialize in analyzing the role of <span class="italic">LITE-1</span> in mediating the response to high-temperature stress.</p>
+            <h2 id="education">Education Background</h2>
+            <p>2022-09 to 2025-06 | Huazhong University of Science and Technology (HUST), Master of Science in Biophysics</p>
+            <p>GPA: 3.89/5 (Top 49%)</p>
+            <p>2018-09 to 2022-06 | China University of Geosciences (CUG), Bachelor of Science in Biological Sciences</p>
+            <p>GPA: 3.67/5 (Top 9%)</p>
+            <p>English Language: CET-6 (535)</p>
+            <p>Skills: Python, GraphPad, Origin, SPSS</p>
+            <h2 id="experience">Research Experience</h2>
+            <p>2022-09 to 2025-06 | Huazhong University of Science and Technology (HUST)</p>
+            <p>Mechanisms of the photoreceptor <span class="italic">LITE-1</span> mediating the response to high-temperature stress in <span class="italic">Caenorhabditis elegans</span>.</p>
+            <p><span class="italic">LITE-1</span>, an efficient short-wavelength light sensor protein in <span class="italic">C. elegans</span>, and its homolog, GR28BD, in <span class="italic">Drosophila</span>, have been reported to sense both light and temperature. Using behavioral analysis, genetics, and in vivo calcium imaging, we have preliminarily identified that the <span class="italic">lite-1</span> mediated heat stress response in <span class="italic">C. elegans</span> play a role in the ASH, ASI, and AWB neurons. Based on transcriptome sequencing, we focused downstream on the MAPK and DAF-16/FOXO pathways.</p>
+            <p>This project is ongoing. During my postgraduate studies, I represented my lab by submitting abstracts and posters to the 7th Youth Scholars Forum on Ion Channels and Receptors, and gave an oral presentation at the Yangtze River Worm Conference. Due to my outstanding performance, I was invited to be a session chair and student guest at the conference.</p>
+            <div class="slideshow-container">
+                <div class="slides active">
+                    <img src="poster.jpg" alt="Poster" class="slides">
+                    <div class="caption-container">Poster presented at the 7th Youth Scholars Forum on Ion Channels and Receptors</div>
+                </div>
+                <div class="slides">
+                    <img src="slide1.jpg" alt="PPT Slide 1" class="slides">
+                    <div class="caption-container">PPT Slide 1</div>
+                </div>
+                <div class="slides">
+                    <img src="slide2.jpg" alt="PPT Slide 2" class="slides">
+                    <div class="caption-container">PPT Slide 2</div>
+                </div>
+                <!-- Add more slides as needed up to slide29.jpg -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dots-container">
+                <span class="dot active-dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <!-- Add more dots as needed up to slide29.jpg -->
+            </div>
+            <h2 id="publications">Publications</h2>
+            <p>Integrative assessments on molecular taxonomy of <span class="italic">Acidiferrobacter thiooxydans</span> ZJ and its environmental adaptation based on mobile genetic elements. Frontiers in Microbiology, 2022;13:826829. (SCI, T2, IF: 6.064)</p>
+            <p>Weiyi Yang, Shanshan Huang, Rui Liu, Huiying Li, Ximping Huang, Junming Xiong, Xueduan Liu*</p>
+            <p>Insights into adaptive mechanisms of extreme acidophiles based on quorum sensing/quenching-related proteins. mSystems, 2022, 7(2), e01491-21. (SCI, T2, IF: 7.324)</p>
+            <p>Shanshan Huang, Xueduan Liu, Weiyi Yang, Liyuan Ma*, Huiying Li, Rui Liu, Jinpixuan Qiu, Yiran Li</p>
+            <h2 id="awards">Awards and Research Projects</h2>
+            <p>2022-08 | Team Leader: First Prize in the National College Student Life Science Competition (National level)</p>
+            <p>2021-04 | Team Leader: College Students' Innovation and Entrepreneurship Project (Provincial level)</p>
+            <p>2023-12 | Excellent Postgraduate Cadre (HUST)</p>
+            <p>2020-12 | Outstanding Student (CUG)</p>
+            <p>2020-10 | Excellent interns in Zigui field ecology practice (CUG)</p>
+            <p>2020-06 | Excellent Undergraduate Cadre (CUG)</p>
+            <h2 id="activities">Extracurricular Activities</h2>
+            <p>2023-08-20 to 2023-08-26 | BioBit Computational Biology Summer School, awarded the "Research Star"</p>
+            <p>2019-09 to 2020-06 | Director of Science and Technology Department in University Student Science and Technology Association</p>
+            <p>2022-01 to 2022-03 | Volunteering in Cloud Education for Welcoming the Winter Olympics</p>
+            <p>2022-11 to 2023-07 | Junior Red Cross First Aid Qualification</p>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active-dot");
+            }
+            slides[slideIndex-1].classList.add("active");
+            dots[slideIndex-1].classList.add("active-dot");
+        }
+    </script>
 </body>
 </html>
+
