@@ -17,12 +17,14 @@
             color: #fff;
             padding: 10px;
             text-align: center;
+            z-index: 1000;
         }
         .navbar a {
             color: #fff;
             padding: 14px 20px;
             text-decoration: none;
             display: inline-block;
+            font-weight: bold; /* 字体加粗 */
         }
         .navbar a:hover {
             background-color: #ddd;
@@ -136,16 +138,17 @@
 
 <body>
     <div class="navbar">
-        <a href="#home">Home</a>
+        <a href="#home</strong>">Home</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
         <a href="#awards">Awards</a>
         <a href="#activities">Activities</a>
     </div>
     <div class="container">
         <div class="sidebar">
             <img src="weiyi_yang.jpg" alt="Weiyi Yang">
-            <h2>Weiyi Yang</h2>
+            <h2>Weiyi Yang (杨伟艺)</h2>
             <p>Huazhong University of Science and Technology</p>
             <div class="contact-info">
                 <p>📍 Luoyu Road 1037, Wuhan, China</p>
@@ -154,8 +157,8 @@
         </div>
         <div class="content">
             <h2>Welcome!</h2>
-            <p>About Me: I'm a Master of Science in Biophysics student at Huazhong University of Science and Technology (HUST). My expertise lies in applied biophysics, specifically in the study of photoreceptor mechanisms in <span class="italic">Caenorhabditis elegans</span>. I specialize in analyzing the role of <span class="italic">LITE-1</span> in mediating the response to high-temperature stress.</p>
-            <h2 id="education">Education Background</h2>
+            <p>About Me: I am currently pursuing a Master's degree in Biophysics at Huazhong University of Science and Technology. My research primarily explores the mechanisms through which the photoreceptor LITE-1 mediates high-temperature stress responses in <span class="italic">Caenorhabditis elegans</span>. During my undergraduate studies, I focused on microbial adaptation in extremely acidic environments, particularly regarding mobile genetic elements. This interdisciplinary research background has honed my learning abilities and fostered a readiness to embrace new challenges.</p>
+            <h2 id="education">Education</h2>
             <p>2022-09 to 2025-06 | Huazhong University of Science and Technology (HUST), Master of Science in Biophysics</p>
             <p>GPA: 3.89/5 (Top 49%)</p>
             <p>2018-09 to 2022-06 | China University of Geosciences (CUG), Bachelor of Science in Biological Sciences</p>
@@ -163,9 +166,9 @@
             <p>English Language: CET-6 (535)</p>
             <p>Skills: Python, GraphPad, Origin, SPSS</p>
             <h2 id="experience">Research Experience</h2>
-            <p>2022-09 to 2025-06 | Huazhong University of Science and Technology (HUST)</p>
-            <p>Mechanisms of the photoreceptor LITE-1 mediating the response to high-temperature stress in <span class="italic">Caenorhabditis elegans</span>.</p>
-            <p>LITE-1, an efficient short-wavelength light sensor protein in <span class="italic">C. elegans</span>, and its homolog, GR28BD, in <span class="italic">Drosophila</span>, have been reported to sense both light and temperature. Using behavioral analysis, genetics, and in vivo calcium imaging, we have preliminarily identified that the <span class="italic">lite-1</span> mediated heat stress response in <span class="italic">C. elegans</span> play a role in the ASH, ASI, and AWB neurons. Based on transcriptome sequencing, we focused downstream on the MAPK and DAF-16/FOXO pathways.</p>
+            <p><strong>2022-09 to 2025-06 | Huazhong University of Science and Technology (HUST)</strong></p>
+            <p><span class="italic">Mechanisms of the photoreceptor LITE-1 mediating the response to high-temperature stress in C. elegans</span>.</p>
+            <p>LITE-1, an efficient short-wavelength light sensor protein in <span class="italic">C. elegans</span>, and its homolog, GR28BD, in <span class="italic">Drosophila</span>, have been reported to sense both light and temperature. Using behavioral analysis, genetics, and in vivo calcium imaging, we have preliminarily identified that the <span class="italic">lite-1</span> mediated heat stress response in <span class="italic">C. elegans</span> play a role in the ASH, ASI, and AWB neurons. Based on transcriptome sequencing, we focused downstream on the MAPK and DAF-16/FOXO pathways... ...</p>
             <p>The project is currently underway. During my graduate studies, I participated in the 7th Youth Scholars Forum on Ion Channels and Receptors and submitted abstracts and posters. Recently, I gave an oral presentation at the Yangtze River Worm Conference, and due to my outstanding performance, I was invited to be a host and student guest at the conference.</p>
             
             <div class="slideshow-container">
@@ -324,14 +327,20 @@
                 <span class="dot" onclick="currentSlide(29)"></span>
             </div>
 
-            <p>2018-09 to 2022-06 | China University of Geosciences (CUG)</p>
-            <p>Microbial adaptation in extremely acidic environments, with a focus on mobile genetic elements.</p>
+            <p><strong>2018-09 to 2022-06 | China University of Geosciences (CUG)</strong></p>
+            <p><span class="italic">Microbial adaptation in extremely acidic environments, with a focus on mobile genetic elements.</span></p>
+            <p>Acidophiles, as a category of primary extremophiles with superior survival and oxidation ability, are  widely distributed in acid mine drainage (AMD) environments. The limited genome information has kept them from being studied on molecular taxonomy and environmental adaptation in depth. In my previous research, I utilized bioinformatic analyses to reveal the potential roles of various mobile genetic elements (MGEs), including insertion sequences (IS), clustered regularly interspaced short palindromic repeats (CRISPR), prophages, and genomic islands (GIs). This work contributed to our understanding of genomic plasticity and evolutionary adaptation mechanisms in extreme AMD environments.</p>
+           <p>Based on this project, under the meticulous guidance of Liyuan Ma professor, I led team to participate in the 2022 China Undergraduate Life Sciences Contest, where we won the first prize. Attached is a link to the competition's online video (5min).
+</p>
+
             <div class="video-container">
                 <video controls width="600" height="400">
                     <source src="Awards-Yasuo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
+
+<p></p>
 
             <h2 id="publications">Publications</h2>
             <p>Publications: (* indicates corresponding author)</p>
@@ -342,7 +351,7 @@
 </p>Shanshan Huang, Xueduan Liu, <strong>Weiyi Yang</strong>, Liyuan Ma*, Huiying Li, Rui Liu, Jinpixuan Qiu, Yiran Li</p>
 
             <h2 id="awards">Awards and Research Projects</h2>
-            <p>2022-08 | Team Leader: First Prize in the National College Student Life Science Competition (National level)</p>
+            <p>2022-08 | Team Leader: First Prize in the China Undergraduate Life Sciences Contest (National level)</p>
             <p>2021-04 | Team Leader: College Students' Innovation and Entrepreneurship Project (Provincial level)</p>
             <p>2023-12 | Excellent Postgraduate Cadre (HUST)</p>
             <p>2020-12 | Outstanding Student (CUG)</p>
